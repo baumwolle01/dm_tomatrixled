@@ -227,7 +227,7 @@ options.drop_privileges = 0
 FORK = True  # d3d9/rpi-rgb-led-matrix fork
 writeppm = bool(args.write_ppm)
 ppmfile = args.write_ppm
-options.pixelsvector = writeppm
+# options.pixel_mapper_config = writeppm
 
 '''
 gpiotest = False
@@ -964,7 +964,7 @@ class KVBDisplay(Display):
 
 
 def loop(matrix: RGBMatrix, pe: Executor, sleep_interval: int) -> NoReturn:
-    canvas = matrix.CreateFrameCanvas(writeppm) if FORK else matrix.CreateFrameCanvas()
+    canvas = matrix.CreateFrameCanvas()
     x_min = 0
     y_min = 0
     x_max = canvas.width - 1
