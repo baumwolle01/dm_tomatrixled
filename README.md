@@ -45,6 +45,8 @@ Verschiedene Betriebs- und Darstellungsbezogene Dinge können konfiguriert werde
 Grundsätzlich ist es möglich, weitere, z. B. größere Schriftarten zu nutzen, dabei wurde allerdings noch nicht viel getestet und manche Parameter müssen je nach Schrift manuell angepasst werden. Proportionale Schriftarten werden unterstützt. Wichtig ist, dass in der Regel ein Pixel rechts frei sein soll, dies ist eine Annahme, die aktuell noch an vielen Stellen im Code vorhanden ist.    
 Auch andere Symbole können verwendet werden.
 
+Die hstcolor.json wird genutzt um alternative Farben darzustellen, erfordert Parameter: --hst-colours
+
 Es wird eine Logdatei geschrieben, die Anfang und Ende sowie auftretende Fehler und ggf. die fehlerhaften Schnittstellendaten protokolliert, optional wird auch eine Datei geschrieben, in der die Datenaktualisierungszeitpunkte sowie die Anzahl der enthaltenen Abfahrten (und Anzahl der Echtzeitabfahrten) festgehalten werden.    
 Alle diese Informationen werden auch auf der Standardfehlerausgabe ausgegeben und sind, wenn man den systemd service (siehe unten) nutzt, auch über journalctl aufrufbar (z. B. ```journalctl -o cat -fu matrix```, optional auch bunt mit ```| ccze -A``` dahinter).
 
