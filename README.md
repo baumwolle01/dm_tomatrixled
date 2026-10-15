@@ -47,6 +47,8 @@ Auch andere Symbole können verwendet werden.
 
 Die hstcolor.json wird genutzt um alternative Farben darzustellen, erfordert Parameter: --hst-colours
 
+Die Farbe Amber (wie sie bei Fast allen Anzeigen vorkommen) ist #FFBF00; alle anderen Farben Linien technisch können weiterhin angepasst werden
+
 Es wird eine Logdatei geschrieben, die Anfang und Ende sowie auftretende Fehler und ggf. die fehlerhaften Schnittstellendaten protokolliert, optional wird auch eine Datei geschrieben, in der die Datenaktualisierungszeitpunkte sowie die Anzahl der enthaltenen Abfahrten (und Anzahl der Echtzeitabfahrten) festgehalten werden.    
 Alle diese Informationen werden auch auf der Standardfehlerausgabe ausgegeben und sind, wenn man den systemd service (siehe unten) nutzt, auch über journalctl aufrufbar (z. B. ```journalctl -o cat -fu matrix```, optional auch bunt mit ```| ccze -A``` dahinter).
 
